@@ -15,24 +15,28 @@
             <h1>Generate a <br><span id="title-el-txt">random password</span></h1>
             <p>Never use an insecure password again.</p>
         </div>
-        <button id="generateBtn" onclick="renderPassword()">Generate Password</button>
+
+        <button id="generateBtn" type="button" onclick="renderPassword()">Generate Password</button>
+        
         <div id="separator"></div>
+
         <div id="password-el">
-    <div class="password-box-container">
-        <p id="password-box-one"></p>
-        <button class="save-btn" onclick="copyPassword('password-box-one')">
-            <img src="src/img/copy-svgrepo-com.svg">
-        </button>
+            <div class="password-box-container">
+                <p id="password-box-one"></p>
+                <button class="save-btn" type="button" onclick="copyPassword('password-box-one', this)">
+                    <img src="src/img/copy-svgrepo-com.svg" alt="Copy to clipboard">
+                </button>
+            </div>
+            
+            <div class="password-box-container">
+                <p id="password-box-two"></p>
+                <button class="save-btn" type="button" onclick="copyPassword('password-box-two', this)">
+                    <img src="src/img/copy-svgrepo-com.svg" alt="Copy to clipboard">
+                </button>
+            </div>
+        </div>
     </div>
-    
-    <div class="password-box-container">
-        <p id="password-box-two"></p>
-        <button class="save-btn" onclick="copyPassword('password-box-two')">
-            <img src="src/img/copy-svgrepo-com.svg">
-        </button>
-    </div>
-</div>
-    </div>
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
