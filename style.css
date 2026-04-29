@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    font-family: "Roboto Condensed", sans-serif;;
+    background-color: #2F3E53;
+}
+
+#card {
+    min-height: 600px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 60px;
+    background-color: #1F2937;
+    border-radius: 10px;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 0;
+    font-size: 60px;
+}
+
+p {
+    color: gainsboro;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#title-el-txt {
+    color: #4ADF86;
+}
+
+#title-el {
+    margin-bottom: 70px;
+}
+
+#generateBtn { 
+    background-color: #10B981;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+#generateBtn:hover{
+    background: #4ADF86;
+}
+
+#separator {
+    border-top: 1px solid #273549;
+    margin-bottom: 40px;
+}
+
+#password-el {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centruje oba okienka */
+    gap: 20px;               /* Robi ładny odstęp między lewym a prawym okienkiem */
+    margin-top: 20px;
+}
+
+.password-box-container {
+    display: flex;           /* Zmieniamy z inline-flex na zwykły flex */
+    justify-content: space-between;
+    align-items: center;
+    background: #273549;
+    width: 240px;            /* Dajemy konkretną szerokość w pikselach zamiast % */
+    height: 55px;
+    border-radius: 5px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+#password-box-one, #password-box-two {
+    color: #55F991;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.save-btn img {
+    width: 20px;   /* Lub inna wielkość, która Ci pasuje */
+    height: auto;  /* Ważne, żeby określić obie wartości lub użyć auto */
+    display: block;
+}
+
+.save-btn {
+    background: none;
+    border: none;
+    cursor: copy;
+}
+
+.save-btn:hover {
+    opacity: 3;
+    transform: scale(1.1);
+}
+
+.toggle-el {
+    display: flex;
+}

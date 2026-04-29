@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="card">
+        <div id="title-el">
+            <h1>Generate a <br><span id="title-el-txt">random password</span></h1>
+            <p>Never use an insecure password again.</p>
+        </div>
+        <button id="generateBtn" onclick="renderPassword()">Generate Password</button>
+        <div id="separator"></div>
+        <div id="password-el">
+    <div class="password-box-container">
+        <p id="password-box-one"></p>
+        <button class="save-btn" onclick="copyPassword('password-box-one')">
+            <img src="src/img/copy-svgrepo-com.svg">
+        </button>
+    </div>
+    
+    <div class="password-box-container">
+        <p id="password-box-two"></p>
+        <button class="save-btn" onclick="copyPassword('password-box-two')">
+            <img src="src/img/copy-svgrepo-com.svg">
+        </button>
+    </div>
+</div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
