@@ -46,7 +46,7 @@ p {
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     cursor: pointer;
 }
 
@@ -62,17 +62,17 @@ p {
 #password-el {
     width: 100%;
     display: flex;
-    justify-content: center; /* Centruje oba okienka */
-    gap: 20px;               /* Robi ładny odstęp między lewym a prawym okienkiem */
+    justify-content: center; 
+    gap: 20px;
     margin-top: 20px;
 }
 
 .password-box-container {
-    display: flex;           /* Zmieniamy z inline-flex na zwykły flex */
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background: #273549;
-    width: 240px;            /* Dajemy konkretną szerokość w pikselach zamiast % */
+    width: 240px;
     height: 55px;
     border-radius: 5px;
     padding: 0 15px;
@@ -87,8 +87,8 @@ p {
 }
 
 .save-btn img {
-    width: 20px;   /* Lub inna wielkość, która Ci pasuje */
-    height: auto;  /* Ważne, żeby określić obie wartości lub użyć auto */
+    width: 20px;   
+    height: auto; 
     display: block;
 }
 
@@ -103,6 +103,17 @@ p {
     transform: scale(1.1);
 }
 
-.toggle-el {
+#toggle-section {
     display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.toggle-el {
+    margin: 0;
+    padding: 0;
+    color: #4ADF86;
+    font-size: 20px;
 }
