@@ -23,36 +23,19 @@
         <div id="password-el">
             <div class="password-box-container">
                 <p id="password-box-one"></p>
-                <button class="save-btn" type="button" onclick="copyPassword('password-box-one', this)">
+                <button class="save-btn" type="button" onclick="copyPasswordOne()">
                     <img src="src/img/copy-svgrepo-com.svg" alt="Copy to clipboard">
                 </button>
             </div>
             
             <div class="password-box-container">
                 <p id="password-box-two"></p>
-                <button class="save-btn" type="button" onclick="copyPassword('password-box-two', this)">
+                <button class="save-btn" type="button" onclick="copyPasswordTwo()">
                     <img src="src/img/copy-svgrepo-com.svg" alt="Copy to clipboard">
                 </button>
             </div>
         </div>
-
-        <div id="toggle-section">
-            <div class="toggle-el">
-                <input type="checkbox" id="symbols" name="symbols" value="Symbols">
-                <label for="symbols"> Symbols</label><br>
-            </div>
-            <div class="toggle-el">
-                <input type="checkbox" id="numbers" name="numbers" value="Numbers">
-                <label for="numbers"> Numbers</label><br>
-            </div>
-        </div>
-
-        <div class="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-        </div>
-
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>

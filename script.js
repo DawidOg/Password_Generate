@@ -21,3 +21,19 @@ function renderPassword() {
     passwordOne.textContent = passwordRandomOne
     passwordTwo.textContent = passwordRandomTwo
 }
+
+function copyPasswordOne() {
+    let copyTextOne = document.getElementById("password-box-one");
+    let passwordOne = copyTextOne.textContent
+    navigator.clipboard.writeText(passwordOne);
+
+    alert("Copied the text: " + passwordOne)
+}
+
+function copyPasswordTwo() {
+    let copyTextTwo = document.getElementById("password-box-two")
+    let passwordTwo = copyTextTwo.textContent
+    navigator.clipboard.writeText(passwordTwo);
+
+    alert("Copied the text: " + passwordTwo)
+}
